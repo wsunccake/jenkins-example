@@ -1,4 +1,6 @@
-@Library('jenkins-example') _
+library identifier: 'jenkins-example@master', retriever: modernSCM(
+  [$class: 'GitSCMSource',
+   remote: 'https://github.com/wsunccake/jenkins-example.git'])
 
 pipeline {
     agent any
