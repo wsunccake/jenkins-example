@@ -1,3 +1,5 @@
+@Library('jenkins-example') _
+
 pipeline {
     agent any
     stages {
