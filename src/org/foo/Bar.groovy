@@ -1,11 +1,9 @@
 package org.foo
 
 class Bar {
-    def env
     def steps
 
-    Bar(env, steps) {
-        this.env = env
+    Bar(steps) {
         this.steps = steps
     }
 
