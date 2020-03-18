@@ -7,8 +7,10 @@ pipeline {
     stages {
         stage('vars') {
             steps {
+              script {
                 log.info 'info message'
                 log.warning 'warning message'
+              }
             }
         }
     }
