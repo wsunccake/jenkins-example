@@ -26,4 +26,9 @@ node {
         ).org.foo.Bar.new(this)
         bar.barRun('bar')
     }
+	
+    def fooJson = libraryResource 'foo.json'
+    stage('resources') {
+        echo "${fooJson}"
+    }
 }
